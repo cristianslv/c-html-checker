@@ -2,11 +2,11 @@
 
 ## This app was built in order to learn about Data Structures.
 
-### **In the project folder you must have your teste.txt file**
+## → **In the project folder you must have your teste.txt file**
 
-### **The text.txt file must have some HTML tags**
+## → **The text.txt file must have some HTML tags**
 
-### You must have gcc in your system to compile the app →
+### You must have gcc in your system to compile the app
 
 ```bash
 $ gcc -o hello hello.c
@@ -17,13 +17,13 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-### Compiling the app →
+### Compiling the app
 
 ```bash
 $ gcc -o main main.c
 ```
 
-### Running the app →
+### Running the app
 
 ```bash
 $ ./main "teste.txt"
