@@ -1,0 +1,77 @@
+<div class="block-details" id="index-1499435314965">        
+    <div class="title" id="index-1499435314980">
+        <div class="caption" id="index-1499435314996">
+            <div class="caption-subject text-brand-primary" id="index-1499435315011">{{'hcm.hcm.exibicao_por_papel' | translate}}</div>
+        </div>
+    </div>
+        <div class="portlet-body" id="index-1499435315027">
+        <div class="row margin-top-20" id="index-1499435315043">
+            <div class="col-md-4" id="index-1499435315053">
+                <div class="form-group required" id="index-1499435315063">
+                    <label for="dashboard-role" class="control-label">{{"hcm.hcm.Selecione_um_papel" | translate}}</label>
+                    <select class="form-control" name="dashboard-role" id="dashboard-role" ng-model="vm.dashboard.role" ng-change="vm.getDashboards(vm.dashboard.role)">
+                        <option ng-value="role.id" ng-repeat="role in vm.userRoles">
+                            {{role.name}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-top-10" id="index-1499435315085">
+            <div class="col-md-5" id="index-1499435315100">
+                <div ng-if="vm.dashboards" id="index-1499435315116">
+                    <p>
+                        {{"hcm.hcm.Controlar_visibilidade" | translate}}
+                        <i class="fa fa-fw fa-spin fa-spinner pull-right" ng-if="vm.isLoading" id="index-1499435314885"></i>
+                    </p>
+                    <hr class="margin-top-5">
+                    <ul class="media-list no-padding margin-left-20">
+                        <li ng-repeat="(key , value) in vm.dashboards">
+                            <div ng-click="vm.expandList(value)" id="index-1499435315127">
+                                <label class="padding-left-10">
+                                    {{'hcm.hcm.'+key | translate}}
+                                    <span class="color-hint italic" id="index-1499435315196">{{"hcm.hcm.painel" | translate}}</span>
+                                </label>
+                                <span class="pull-left" id="index-1499435315211">
+                                    <i class="fa fa-chevron-down color-secondary" ng-if="!value.enable" id="index-1499435314901"></i>
+                                    <i class="fa fa-chevron-up color-secondary" ng-if="value.enable" id="index-1499435314917"></i>
+                                </span>
+                            </div>
+                            <ul class="media-list no-padding margin-left-55" ng-if="value.enable">
+                                <li ng-repeat="item in value | orderBy: 'portlet'" ng-if="item.portlet !== 'COMPETENCIES_MAP'">
+                                    <div class="checkbox" id="index-1499435315137">
+                                        <label>
+                                            <input type="checkbox" ng-model="item.visible" ng-disabled="vm.isLoading" id="index-item-visible">
+                                            <strong ng-if="item.visible">{{'hcm.hcm.'+item.portlet | translate}}</strong>
+                                            <span ng-if="!item.visible" id="index-1499435315227">{{'hcm.hcm.'+item.portlet | translate}}</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr class="margin-bottom-5">
+                </div>
+                <div ng-if="vm.dashboards.length 1" class="text-center bg-light bg-light-active bg-light-round padding-10" id="index-1499435315149">
+                    <i class="fa fa-dashboard font-hg margin-top-15 margin-bottom-10" id="index-1499435314927"></i>
+                    <p class="font-sm color-secondary">{{'Este papel não possui dashboards visíveis' | translate}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-top-25" id="index-1499435315164">
+            <div class="col-md-12 text-left" id="index-1499435315180">
+                <button class="btn btn-primary" ng-click="vm.updateDashboardVisibility()" ng-disabled="!vm.dashboards" id="index-1499435314854">
+                    {{"hcm.hcm.Salvar" | translate}}
+                </button>
+                <button class="btn btn-link btn-sm" ui-sref="dashboard" id="index-1499435314864" ng-if="!isG7">
+                    <i class="fa fa-times fa-fw" id="index-1499435314937"></i>
+                    <span class="hidden-xs" id="index-1499435315242">{{"hcm.hcm.Cancelar" | translate}}</span>
+                </button>
+                <span ng-if="vm.isLoading" id="index-1499435315253">
+                    <i class="fa fa-fw fa-spin fa-spinner" id="index-1499435314948"></i>
+                    <strong>{{"hcm.hcm.Aguarde_um_instante" | translate}}</strong>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
