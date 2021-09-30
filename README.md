@@ -2,9 +2,9 @@
 
 ## This app was built in order to learn about Data Structures.
 
-## → **In the project folder you must have your teste.txt file**
+## → In the project folder you must have your teste.txt file
 
-## → **The text.txt file must have some HTML tags**
+## → The text.txt file must have some HTML tags
 
 ### You must have gcc in your system to compile the app
 
