@@ -1,4 +1,4 @@
-<img src="https://www.notion.so/image/https%3A%2F%2Fwww.notion.so%2Fimages%2Fpage-cover%2Fsolid_blue.png?table=block&id=d1f0745f-45ef-41c0-876e-66b1996e17be&spaceId=ddb0f372-c744-478d-a007-db8e1837c7aa&width=2000&userId=7d3a0721-e3e6-4f67-a838-67f1a0117102&cache=v2" alt="Notion" width="100%" height="50px">
+<img src="https://latx-technologies.com/wp-content/uploads/2021/03/c-programming-course-1024x553.jpg" alt="Notion" width="100%" height="50px">
 
 # C - HTML CHECKER
 
