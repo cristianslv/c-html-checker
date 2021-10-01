@@ -1,4 +1,4 @@
-<img src="https://latx-technologies.com/wp-content/uploads/2021/03/c-programming-course-1024x553.jpg" alt="Notion" width="100%" height="150px">
+<img alt="Notion" width="100%" height="150px">
 
 # C - HTML CHECKER
 
