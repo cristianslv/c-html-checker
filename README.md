@@ -1,4 +1,6 @@
-<img alt="Notion" width="100%" height="150px">
+<p align="center">
+  <img src="https://img1.gratispng.com/20171220/dgw/letter-c-png-5a3a869353fec5.5541397315137849793441.jpg">
+</p>
 
 # C - HTML CHECKER
 
