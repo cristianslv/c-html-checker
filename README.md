@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img1.gratispng.com/20171220/dgw/letter-c-png-5a3a869353fec5.5541397315137849793441.jpg">
+  <img src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png">
 </p>
 
 # C - HTML CHECKER
